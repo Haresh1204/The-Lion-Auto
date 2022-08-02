@@ -17,9 +17,10 @@
  
 } 
 #nav{
+    position: sticky;
     top: 0;
     display: flex;
-    position: relative;
+    
 }
 #nav::before{
     content: "";
@@ -139,24 +140,35 @@ h3{
     height:70px;
     font-size: 3rem;
     text-align: center;
-    top: 760px;
+    top: 720px;
     z-index: -1;
     color: rgb(195, 185, 57);
     background-color: black;
 }
 .our{
+    display: flex;
+    flex-direction: column;
     color: white;
 }
 .box {
     display: flex;
     border: 2px solid brown;
     padding: 25px;
-    margin: 208px 7px ;
+    margin: 220px 7px ;
     background-color: black;
     border-radius: 28px;
-    margin-bottom: 0px;
+    margin-top: 169px;
+    margin-bottom: -167px;
+}
+h5{
+   font-size: 1.5rem;
+   width: 34%;
+   padding-left: 50px;
+   padding-top: 50px;
+
 }
 .box img{
-    height: 183px;
-    margin: auto;  
+    width: 33.33%;
+    padding-left:50px ;
+    margin: auto; 
 }
