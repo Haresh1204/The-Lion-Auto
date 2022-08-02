@@ -1,18 +1,23 @@
-body{
+*{
+   
     margin:0;
     padding: 0;
 }
 .item{
     display: flex;
-    align-items: center;
-    
-
-    
+    align-items: center;    
 }
 #logo{
-    color: rgb(156, 16, 63);  
+    padding: 1px;
+    color: rgb(156, 16, 63); 
+    display: flex;
+    flex-direction: column;
+    font-size: 1.0rem;
+   
+ 
 } 
 #nav{
+    top: 0;
     display: flex;
     position: relative;
 }
@@ -23,7 +28,7 @@ body{
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 2.5;
+    opacity: 0.8;
 }
 ul{
     display: flex;
@@ -33,7 +38,7 @@ ul{
     list-style: none;
     font-size: 1.3rem;
     font-family: 'Baloo 2', 'cursive';
-font-family: 'Bree Serif', serif;
+    font-family: 'Bree Serif', serif;
 }
 li a{
     padding: 20px;
@@ -48,48 +53,110 @@ li a{
     padding: 3px 200px;
     justify-content: center;
     align-items: center;
-    height: 400px;
-    color: rgb(208,202 ,15,0.9);
+    height: 500px;
+    color: rgba(208, 157, 15, 1.0);
     font-family: 'Bree Serif', serif;
 }
 .home::before{
     content: "";
     background: url('back.png') no-repeat center center/cover;
     position: absolute;
+    top: 117px;
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 0.9;
+    opacity: 0.7;
 }
 .primary{
     font-size: 2.8rem;
     padding: 12px;
     text-align: center;
 }
+.content{
+    color: red;
+}
 .book{
-      
     list-style: none;
     font-size: 1.3rem;
     font-family: 'Baloo 2', 'cursive';
     font-family: 'Bree Serif', serif;
     text-decoration: none;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     position: sticky;
     color: white;
     top: 12px;
-    padding: 30px 10px;
-    margin-left: auto; 
+    padding: 30px 7px;
+    margin-left: auto;
+    width: 200px;
+    height: 19px;
     border: 2px solid gold;
-    background-color: rgba(218, 165, 32, 0.652);
     border-radius: 50px;
-    width: 213px;
-    height: 20px;
-
  }
  a:hover{
-    color: blue;
+    color: rgb(0, 255, 123);
  }
  a.book:hover{
     background-color: rgba(0, 0, 0, 0.654);
     color: gold;
+    border: 2px solid gold;
+    border-radius: 50px;
+}
+.dropdown-content{
+   display: none;
+   position: absolute;
+   width: 100%;
+   overflow: auto;  
+}
+#item1 :hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a{
+    display: block;
+    color: white;
+    padding: 1px;
+    width: max-content;
+    height: max-content;
+    border: 3px solid gold;
+    background-color: rgb(83, 40, 83);
+    text-decoration: none;
+}
+.dropdown{
+    color: white;
+}
+.dropdown :hover{
+  color: rgb(0, 255, 166);
+  background-color:black;
+  border-radius: 20px;
+  width: max-content;
+  height: max-content;
+}
+h3{
+    content: "";
+    position: absolute;
+    width: 1420px;
+    height:70px;
+    font-size: 3rem;
+    text-align: center;
+    top: 760px;
+    z-index: -1;
+    color: rgb(195, 185, 57);
+    background-color: black;
+}
+.our{
+    color: white;
+}
+.box {
+    display: flex;
+    border: 2px solid brown;
+    padding: 25px;
+    margin: 208px 7px ;
+    background-color: black;
+    border-radius: 28px;
+    margin-bottom: 0px;
+}
+.box img{
+    height: 183px;
+    margin: auto;  
 }
